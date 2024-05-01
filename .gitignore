@@ -1,0 +1,8 @@
+*.pt
+*.ckpt
+*.pyc
+checkpoints/
+diverse_models/DDNM-guided/exp/image_samples/
+diverse_models/DDRM-guided/exp/image_samples/
+diverse_models/DPS-guided/outputs/
+diverse_models/RePaint-guided/log/

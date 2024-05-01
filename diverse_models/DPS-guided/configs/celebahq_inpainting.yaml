@@ -1,0 +1,20 @@
+conditioning:
+  method: ps
+  params:
+    scale: 2
+
+data:
+  name: celebahq
+  root: ../../data/celeba_inp
+
+measurement:
+  operator:
+    name: inpainting
+  mask_opt:
+    mask_type: path
+    mask_path: ../../data/celeba_inp_masks
+    image_size: 256
+
+  noise:
+    name: gaussian
+    sigma: 0

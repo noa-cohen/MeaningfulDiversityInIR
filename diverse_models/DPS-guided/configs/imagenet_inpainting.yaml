@@ -1,0 +1,20 @@
+conditioning:
+  method: ps
+  params:
+    scale: 2
+
+data:
+  name: imagenet
+  root: ../../data/imagenet
+
+measurement:
+  operator:
+    name: inpainting
+  mask_opt:
+    mask_type: path
+    mask_path: ../../data/imagenet_masks
+    image_size: 256
+
+  noise:
+    name: gaussian
+    sigma: 0
